@@ -1,5 +1,0 @@
-Gustavo:22
-Ana:32
-Pedro:21
-Paulo:34
-José:54
