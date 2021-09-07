@@ -10,13 +10,21 @@ C) Quais foram os números pares.
 
 numbers = (int(input('Digite um número: ')), int(input('Digite outro número: ')),
            int(input('Digite mais número: ')), int(input('Digite o último número: ')))
+par = list()
+p = 0
 print(f'Você digitou os números: {numbers}')
 print(f'O valor 9 apareceu {numbers.count(9)} vezes.')
 if 3 in numbers:
     print(f'O valor 3 apareceu na {numbers.index(3)+1}ª posição.')
 else:
     print('O valor 3 não foi digitado em nenhuma posição.')
-print('Os valores pares digitados foram', end='')
+
 for n in numbers:
     if n % 2 == 0:
-        print(f' {n}', end='')
+        p = 1
+        par.append(n)
+if p >= 1:
+    print('Os valores pares digitados foram:', par)
+else:
+    print('Nenhum número par foi digitado.')
+
