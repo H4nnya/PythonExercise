@@ -9,7 +9,7 @@ cont = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito'
         'dezesete', 'dezoito', 'desenove', 'vinte')
 while True:
     num = int(input('digite um número entre 0 a 20: '))
-    if num < 0 or num > 20:
+    if 0 <= value <= 20:
         print('Tente novamente. ', end='')
     else:
         break
